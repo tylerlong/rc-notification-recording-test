@@ -18,6 +18,7 @@ const main = async () => {
   const subInfo = await pubnubExtension.subscribe(
     [
       '/restapi/v1.0/account/~/extension/~/telephony/sessions?statusCode=Disconnected',
+      '/restapi/v1.0/account/~/extension/590490017/telephony/sessions?statusCode=Disconnected',
     ],
     event => {
       console.log(JSON.stringify(event, null, 2));
